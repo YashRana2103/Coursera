@@ -17,26 +17,29 @@ function GetInfo() {
             for (i = 0; i < 7; i++) {
                 w = data.dataseries[i].weather;
                 switch (w) {
-                    case 'oshower':
-                        document.getElementById("weather" + (i + 1)).innerHTML = 'Cloudy';
-                        break;
-                    case 'lightrain':
-                        document.getElementById("weather" + (i + 1)).innerHTML = 'Light rain';
-                        break;
                     case 'clear':
                         document.getElementById("weather" + (i + 1)).innerHTML = 'Clear';
                         break;
-                    case 'mcloudy':
-                        document.getElementById("weather" + (i + 1)).innerHTML = 'Mostly cloudy';
-                        break;
-                    case 'ishower':
-                        document.getElementById("weather" + (i + 1)).innerHTML = 'Light rain';
+                    case 'cloudy':
+                        document.getElementById("weather" + (i + 1)).innerHTML = 'Cloudy';
                         break;
                     case 'humid':
                         document.getElementById("weather" + (i + 1)).innerHTML = 'Muggy';
                         break;
+                    case 'ishower':
+                        document.getElementById("weather" + (i + 1)).innerHTML = 'Light rain';
+                        break;
+                    case 'lightrain':
+                        document.getElementById("weather" + (i + 1)).innerHTML = 'Light rain';
+                        break;
                     case 'lightsnow':
                         document.getElementById("weather" + (i + 1)).innerHTML = 'Light snow';
+                        break;
+                    case 'mcloudy':
+                        document.getElementById("weather" + (i + 1)).innerHTML = 'Mostly cloudy';
+                        break;
+                    case 'oshower':
+                        document.getElementById("weather" + (i + 1)).innerHTML = 'Cloudy';
                         break;
                     case 'pcloudy':
                         document.getElementById("weather" + (i + 1)).innerHTML = 'Partly cloudy';
@@ -47,16 +50,18 @@ function GetInfo() {
                     case 'rainsnow':
                         document.getElementById("weather" + (i + 1)).innerHTML = 'Rain snow';
                         break;
+                    case 'snow':
+                        document.getElementById("weather" + (i + 1)).innerHTML = 'Snow';
+                        break;
                     case 'ts':
-                        document.getElementById("weather" + (i + 1)).innerHTML = 'Stormy';
+                        document.getElementById("weather" + (i + 1)).innerHTML = 'Thundertorm';
                         break;
                     case 'tsrain':
-                        document.getElementById("weather" + (i + 1)).innerHTML = 'Stormy rain';
+                        document.getElementById("weather" + (i + 1)).innerHTML = 'Storm rain';
                         break;
                     case 'windy':
                         document.getElementById("weather" + (i + 1)).innerHTML = 'Windy';
                         break;
-
                     default:
                         break;
                 }
